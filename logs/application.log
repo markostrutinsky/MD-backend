@@ -3469,3 +3469,10 @@
 2024-12-12 18:58:39.711 [http-nio-8080-exec-4] INFO  project - DirectorController:getImage() Successfully fetched director image by id: 1
 2024-12-12 19:44:11.055 [http-nio-8080-exec-6] INFO  project - MovieController:getImage() Received request to fetch movie image by id: 1
 2024-12-12 19:44:11.129 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findById() Movie with id 1 found in repository
+2024-12-15 01:16:15.126 [http-nio-8080-exec-2] INFO  project - DirectorController:getAll() Received request to fetch all directors
+2024-12-15 01:16:15.126 [http-nio-8080-exec-2] INFO  project - DirectorServiceImpl:findAll() Retrieving all directors from repository
+2024-12-15 01:16:15.307 [http-nio-8080-exec-2] INFO  project - DirectorServiceImpl:findAll() Retrieved 20 directors
+2024-12-15 01:16:15.310 [http-nio-8080-exec-2] INFO  project - DirectorController:getAll() Fetched 20 directors
+2024-12-15 01:16:42.449 [http-nio-8080-exec-3] INFO  project - MovieController:getById() Received request to fetch movie by id: 1
+2024-12-15 01:16:42.462 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findById() Movie with id 1 found in repository
+2024-12-15 01:16:42.462 [http-nio-8080-exec-3] INFO  project - MovieController:getById() Successfully fetched movie by id: 1
