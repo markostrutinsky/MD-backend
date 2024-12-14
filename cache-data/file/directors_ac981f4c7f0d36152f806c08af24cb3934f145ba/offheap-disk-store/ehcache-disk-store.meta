@@ -1,0 +1,4 @@
+#Key and value types
+#Sat Nov 23 05:16:49 EET 2024
+keyType=java.lang.Long
+valueType=com.strutynskyi.api.models.Director
