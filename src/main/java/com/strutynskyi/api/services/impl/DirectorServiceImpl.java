@@ -131,4 +131,3 @@ public class DirectorServiceImpl implements DirectorService {
         return directorRepository.existsByFirstNameAndLastName(firstName, lastName);
     }
 }
-

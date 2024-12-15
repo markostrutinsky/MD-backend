@@ -8,9 +8,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public interface MovieService {
-    Page<Movie> findAll(Integer pageNo, Integer pageSize, String filterField, String filterValue);
+    Page<Movie> findAll(Integer pageNo, Integer pageSize, Map<String, String> filteringFields);
     Movie findById(Long id);
     List<Movie> findByDirector(String firstName, String lastName);
     Movie save(CreateMovieRequestDTO movie, MultipartFile imageFile) throws IOException;

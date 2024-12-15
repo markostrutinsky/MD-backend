@@ -20,7 +20,9 @@ public class Movie implements Serializable {
     private Long id;
     private String title;
     private String genre;
-
+    @Column(columnDefinition = "TEXT")
+    private String description;
+    private Double rating;
     private LocalDate releaseDate;
     private Duration duration;
 

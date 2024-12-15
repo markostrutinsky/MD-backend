@@ -1,5 +1,7 @@
 package com.strutynskyi.api.services.impl;
 
+import com.strutynskyi.api.config.FilteringConfig;
+import com.strutynskyi.api.config.PaginationConfig;
 import com.strutynskyi.api.dto.movie.*;
 import com.strutynskyi.api.exceptions.MovieAlreadyExistsException;
 import com.strutynskyi.api.exceptions.NoMoviesByDirectorFoundException;
@@ -10,6 +12,7 @@ import com.strutynskyi.api.models.Movie;
 import com.strutynskyi.api.repositories.MovieRepository;
 import com.strutynskyi.api.services.interfaces.DirectorService;
 import com.strutynskyi.api.services.interfaces.MovieService;
+import com.strutynskyi.api.specifications.MovieSpecifications;
 import com.strutynskyi.api.validators.RequestDTOValidator;
 import lombok.RequiredArgsConstructor;
 import org.apache.logging.log4j.LogManager;
@@ -19,11 +22,14 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -32,21 +38,41 @@ public class MovieServiceImpl implements MovieService {
 
     private final MovieRepository movieRepository;
     private final DirectorService directorService;
+    private final PaginationConfig paginationConfig;
+    private final FilteringConfig filterConfig;
     private final RequestDTOValidator<CreateMovieRequestDTO> createMovieRequestDTOValidator;
     private final RequestDTOValidator<UpdateMovieRequestDTO> updateMovieRequestDTOValidator;
     private static final Logger logger = LogManager.getLogger("project");
 
     @Override
-    public Page<Movie> findAll(Integer pageNo, Integer pageSize, String filterField, String filterValue) {
+    public Page<Movie> findAll(Integer pageNo, Integer pageSize, Map<String, String> filteringFields) {
         logger.info("MovieServiceImpl:findAll() Retrieving all movies from repository");
+        if (pageNo == null)
+            pageNo = paginationConfig.getDefaultPageNumber();
+
+        if (pageSize == null)
+            pageSize = paginationConfig.getDefaultPageSize();
+
+        if (pageSize > paginationConfig.getMaxPageSize())
+            pageSize = paginationConfig.getMaxPageSize();
+
+        List<String> allowedFields = filterConfig.getAllowedFields();
+        Map<String, String> filtersParam = new HashMap<>(filteringFields);
+        if (!filtersParam.isEmpty()) {
+            for (String filterKey : filtersParam.keySet()) {
+                if (!allowedFields.contains(filterKey.toLowerCase())) {
+                    filteringFields.remove(filterKey);
+                }
+            }
+        }
         Pageable pageable = PageRequest.of(pageNo, pageSize);
         Page<Movie> movies;
 
-        if (filterField != null) {
-            movies = movieRepository.findByField(filterField, filterValue, pageable);
-        } else {
-            movies = movieRepository.findAll(pageable);
+        Specification<Movie> specification = Specification.where(null);
+        for (Map.Entry<String, String> filter : filteringFields.entrySet()) {
+            specification = specification.and(MovieSpecifications.filterBy(filter.getKey(), filter.getValue()));
         }
+        movies = movieRepository.findAll(specification, pageable);
 
         logger.info("MovieServiceImpl:findAll() Retrieved {} movies", movies.getContent().size());
         return movies;

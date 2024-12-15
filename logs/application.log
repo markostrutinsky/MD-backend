@@ -3476,3 +3476,27 @@
 2024-12-15 01:16:42.449 [http-nio-8080-exec-3] INFO  project - MovieController:getById() Received request to fetch movie by id: 1
 2024-12-15 01:16:42.462 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findById() Movie with id 1 found in repository
 2024-12-15 01:16:42.462 [http-nio-8080-exec-3] INFO  project - MovieController:getById() Successfully fetched movie by id: 1
+2024-12-15 02:16:51.295 [http-nio-8080-exec-1] INFO  project - DirectorController:getById() Received request to fetch director by id: 1
+2024-12-15 02:16:51.328 [http-nio-8080-exec-1] INFO  project - DirectorServiceImpl:findAll() Retrieving director from repository with id: 1
+2024-12-15 02:16:51.416 [http-nio-8080-exec-1] INFO  project - DirectorServiceImpl:findById() Director with id 1 found in repository
+2024-12-15 02:16:51.428 [http-nio-8080-exec-1] INFO  project - DirectorController:getById() Successfully fetched director by id: 1
+2024-12-15 02:55:48.525 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 02:55:48.526 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 02:55:48.602 [http-nio-8080-exec-1] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Unable to find column position by name: id [The column name id was not found in this ResultSet.] [n/a]; SQL [n/a]
+2024-12-15 02:57:35.842 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 02:57:35.842 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 02:57:35.905 [http-nio-8080-exec-2] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Unable to find column position by name: id [The column name id was not found in this ResultSet.] [n/a]; SQL [n/a]
+2024-12-15 02:57:40.577 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 02:57:40.577 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 02:57:40.665 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 02:57:40.665 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 02:58:02.823 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 02:58:02.823 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 02:58:02.830 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 02:58:02.830 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 02:58:21.172 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 02:58:21.172 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 02:58:21.175 [http-nio-8080-exec-6] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Unable to find column position by name: id [The column name id was not found in this ResultSet.] [n/a]; SQL [n/a]
+2024-12-15 03:00:11.009 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 03:00:11.010 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 03:00:11.106 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 7 movies

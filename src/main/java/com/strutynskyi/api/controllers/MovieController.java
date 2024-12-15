@@ -1,10 +1,6 @@
 package com.strutynskyi.api.controllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.strutynskyi.api.config.FilteringConfig;
-import com.strutynskyi.api.config.PaginationConfig;
-import com.strutynskyi.api.dto.director.UpdateDirectorRequestDTO;
 import com.strutynskyi.api.dto.movie.CreateMovieRequestDTO;
 import com.strutynskyi.api.dto.movie.MovieDTO;
 import com.strutynskyi.api.dto.movie.MovieResponseDTO;
@@ -22,9 +18,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.DataInput;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("api/movies")
@@ -32,35 +28,18 @@ import java.util.List;
 public class MovieController {
     private final MovieService movieService;
     private final ObjectMapper objectMapper;
-    private final PaginationConfig paginationConfig;
-    private final FilteringConfig filterConfig;
     private static final Logger logger = LogManager.getLogger("project");
 
     @GetMapping
     public ResponseEntity<Page<MovieResponseDTO>> getAll(
+            @RequestParam(required = false) Map<String, String> filters,
             @RequestParam(value = "pageNo", required = false) Integer pageNo,
-            @RequestParam(value = "pageSize", required = false) Integer pageSize,
-            @RequestParam(value = "filterField", required = false) String filterField,
-            @RequestParam(value = "filterValue", required = false) String filterValue
-    ) {
-        if (pageNo == null)
-            pageNo = paginationConfig.getDefaultPageNumber();
+            @RequestParam(value = "pageSize", required = false) Integer pageSize
+            ) {
 
-        if (pageSize == null)
-            pageSize = paginationConfig.getDefaultPageSize();
-
-        if (pageSize > paginationConfig.getMaxPageSize())
-            pageSize = paginationConfig.getMaxPageSize();
-
-        if (filterConfig.isEnabled() && filterField != null) {
-            List<String> allowedFields = filterConfig.getAllowedFields();
-            if (!allowedFields.contains(filterField)) {
-                throw new IllegalArgumentException("Filtering by " + filterField + " is not allowed.");
-            }
-        }
 
         logger.info("MovieController:getAll() Received request to fetch all movies");
-        Page<Movie> movies = movieService.findAll(pageNo, pageSize, filterField, filterValue);
+        Page<Movie> movies = movieService.findAll(pageNo, pageSize, filters);
 
         logger.info("MovieController:getAll() Fetched {} movies", movies.getContent().size());
         return ResponseEntity.ok(movies.map(MovieMappers::toMovieResponseDTOFromMovie));

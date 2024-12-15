@@ -28,3 +28,5 @@ api:
       enabled: true
       allowed-fields:
         - genre
+        - rating
+        - releaseDate
