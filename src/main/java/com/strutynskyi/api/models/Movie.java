@@ -23,7 +23,7 @@ public class Movie implements Serializable {
     @Column(columnDefinition = "TEXT")
     private String description;
     private Double rating;
-    private LocalDate releaseDate;
+    private LocalDate released;
     private Duration duration;
 
     private String imageName;
@@ -35,10 +35,10 @@ public class Movie implements Serializable {
     @JoinColumn(name = "director_id", nullable = false)
     private Director director;
 
-    public Movie(String title, String genre, LocalDate releaseDate, Duration duration) {
+    public Movie(String title, String genre, LocalDate released, Duration duration) {
         this.title = title;
         this.genre = genre;
-        this.releaseDate = releaseDate;
+        this.released = released;
         this.duration = duration;
     }
 
@@ -49,7 +49,7 @@ public class Movie implements Serializable {
         Movie movie = (Movie) o;
         return Objects.equals(title.toLowerCase(), movie.title.toLowerCase())
                 && Objects.equals(genre.toLowerCase(), movie.genre.toLowerCase())
-                && Objects.equals(releaseDate, movie.releaseDate)
+                && Objects.equals(released, movie.released)
                 && Objects.equals(duration, movie.duration)
                 && Objects.equals(getDirector().getId(), movie.getDirector().getId());
     }
@@ -60,7 +60,7 @@ public class Movie implements Serializable {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", genre='" + genre + '\'' +
-                ", releaseDate=" + releaseDate +
+                ", releaseDate=" + released +
                 ", duration=" + duration +
                 ", imageName='" + imageName + '\'' +
                 ", director=" + director +
@@ -69,6 +69,6 @@ public class Movie implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(title, genre, releaseDate, duration, getDirector().getId());
+        return Objects.hash(title, genre, released, duration, getDirector().getId());
     }
 }

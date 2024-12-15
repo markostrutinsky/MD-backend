@@ -1,20 +1,28 @@
 package com.strutynskyi.api.specifications;
 
 import com.strutynskyi.api.models.Movie;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Expression;
 import org.springframework.data.jpa.domain.Specification;
 
-import java.time.LocalDate;
-
 public class MovieSpecifications {
-    public static Specification<Movie> filterBy(String field, String value) {
+    public static Specification<Movie> filterBy(String field, String value, EntityManager entityManager) {
         return (root, query, criteriaBuilder) -> {
             switch (field) {
                 case "genre":
-                    return criteriaBuilder.equal(root.get("genre"), value);
+                    return criteriaBuilder.like(root.get("genre"), "%" + value + "%");
                 case "rating":
-                    return criteriaBuilder.equal(root.get("rating"), Double.valueOf(value));
-                case "releaseDate":
-                    return criteriaBuilder.equal(root.get("releaseDate"), LocalDate.parse(value));
+                    System.out.println(root.get("rating").getJavaType());
+                    return criteriaBuilder.equal(root.get("rating"), value);
+                case "released":
+                    System.out.println(root.get("released").getJavaType());
+                    Expression<Integer> yearExpression = criteriaBuilder.function(
+                            "DATE_PART", Integer.class,
+                            criteriaBuilder.literal("year"),
+                            root.get("released")
+                    );
+                    return criteriaBuilder.equal(yearExpression, Integer.valueOf(value));
                 default:
                     throw new IllegalArgumentException("Invalid filter field: " + field);
             }

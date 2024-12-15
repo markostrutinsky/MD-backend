@@ -14,11 +14,11 @@ import com.strutynskyi.api.services.interfaces.DirectorService;
 import com.strutynskyi.api.services.interfaces.MovieService;
 import com.strutynskyi.api.specifications.MovieSpecifications;
 import com.strutynskyi.api.validators.RequestDTOValidator;
+import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -35,7 +35,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class MovieServiceImpl implements MovieService {
-
+    private final EntityManager entityManager;
     private final MovieRepository movieRepository;
     private final DirectorService directorService;
     private final PaginationConfig paginationConfig;
@@ -58,6 +58,7 @@ public class MovieServiceImpl implements MovieService {
 
         List<String> allowedFields = filterConfig.getAllowedFields();
         Map<String, String> filtersParam = new HashMap<>(filteringFields);
+        System.out.println(filtersParam);
         if (!filtersParam.isEmpty()) {
             for (String filterKey : filtersParam.keySet()) {
                 if (!allowedFields.contains(filterKey.toLowerCase())) {
@@ -70,7 +71,7 @@ public class MovieServiceImpl implements MovieService {
 
         Specification<Movie> specification = Specification.where(null);
         for (Map.Entry<String, String> filter : filteringFields.entrySet()) {
-            specification = specification.and(MovieSpecifications.filterBy(filter.getKey(), filter.getValue()));
+            specification = specification.and(MovieSpecifications.filterBy(filter.getKey(), filter.getValue(), entityManager));
         }
         movies = movieRepository.findAll(specification, pageable);
 
@@ -146,7 +147,7 @@ public class MovieServiceImpl implements MovieService {
 
         movieToUpdate.setTitle(validMovieModel.getTitle());
         movieToUpdate.setGenre(validMovieModel.getGenre());
-        movieToUpdate.setReleaseDate(validMovieModel.getReleaseDate());
+        movieToUpdate.setReleased(validMovieModel.getReleased());
         movieToUpdate.setDuration(validMovieModel.getDuration());
 
         if (imageFile != null && !imageFile.isEmpty()) {

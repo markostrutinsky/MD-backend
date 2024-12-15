@@ -14,7 +14,7 @@ public class MovieMappers {
                 movieModel.getId(),
                 movieModel.getTitle(),
                 movieModel.getGenre(),
-                movieModel.getReleaseDate(),
+                movieModel.getReleased(),
                 movieModel.getDuration(),
                 movieModel.getDirector().getId()
         );

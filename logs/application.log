@@ -3499,4 +3499,253 @@
 2024-12-15 02:58:21.175 [http-nio-8080-exec-6] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Unable to find column position by name: id [The column name id was not found in this ResultSet.] [n/a]; SQL [n/a]
 2024-12-15 03:00:11.009 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
 2024-12-15 03:00:11.010 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
-2024-12-15 03:00:11.106 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 7 movies
+2024-12-15 03:00:11.106 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 7 movies2024-12-15 16:27:52.230 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:27:52.231 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:27:52.336 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:27:52.337 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:28:07.079 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:07.080 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:07.082 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:28:07.082 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:28:12.370 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:12.370 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:12.373 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:28:12.373 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:28:18.185 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:18.185 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:18.214 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:28:18.214 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:28:29.665 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:29.666 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:29.671 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:28:29.671 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:28:35.301 [http-nio-8080-exec-7] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:35.301 [http-nio-8080-exec-7] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:35.307 [http-nio-8080-exec-7] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:28:35.307 [http-nio-8080-exec-7] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:28:48.268 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:28:48.268 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:28:48.274 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:28:48.275 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:31:45.482 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:31:45.483 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:31:45.488 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:31:45.489 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:31:53.007 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:31:53.007 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:31:53.016 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:31:53.016 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:33:06.761 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:33:06.762 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:33:06.766 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:33:06.766 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:33:48.653 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:33:48.653 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:33:48.658 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieved 5 movies
+2024-12-15 16:33:48.658 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Fetched 5 movies
+2024-12-15 16:34:01.189 [http-nio-8080-exec-7] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:34:01.189 [http-nio-8080-exec-7] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:34:01.193 [http-nio-8080-exec-7] INFO  project - MovieServiceImpl:findAll() Retrieved 4 movies
+2024-12-15 16:34:01.193 [http-nio-8080-exec-7] INFO  project - MovieController:getAll() Fetched 4 movies
+2024-12-15 16:34:10.880 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:34:10.880 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:34:10.884 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieved 5 movies
+2024-12-15 16:34:10.884 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Fetched 5 movies
+2024-12-15 16:34:20.637 [http-nio-8080-exec-9] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:34:20.637 [http-nio-8080-exec-9] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:34:20.640 [http-nio-8080-exec-9] INFO  project - MovieServiceImpl:findAll() Retrieved 4 movies
+2024-12-15 16:34:20.641 [http-nio-8080-exec-9] INFO  project - MovieController:getAll() Fetched 4 movies
+2024-12-15 16:34:32.719 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:34:32.720 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:34:32.725 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieved 7 movies
+2024-12-15 16:34:32.725 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Fetched 7 movies
+2024-12-15 16:45:18.078 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:45:18.079 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:45:18.188 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:45:18.188 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:45:40.394 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:45:40.394 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:45:40.399 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:45:40.399 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:45:51.254 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:45:51.255 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:45:51.261 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:45:51.261 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:46:14.738 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:46:14.738 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:46:14.744 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:46:14.744 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:51:31.580 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:51:31.580 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:51:31.585 [http-nio-8080-exec-8] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:51:31.585 [http-nio-8080-exec-8] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:52:13.844 [http-nio-8080-exec-9] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:52:13.845 [http-nio-8080-exec-9] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:52:13.850 [http-nio-8080-exec-9] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:52:13.850 [http-nio-8080-exec-9] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:52:28.456 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:52:28.456 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:52:28.462 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:52:28.462 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:52:34.108 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:52:34.108 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:52:34.113 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:52:34.113 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:54:43.343 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:54:43.343 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:54:43.359 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:54:43.359 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:54:52.662 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:54:52.662 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:54:52.668 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:54:52.668 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:57:59.209 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:57:59.210 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:57:59.327 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 16:57:59.327 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 16:58:04.291 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:58:04.291 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:58:04.313 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:58:04.313 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 16:58:18.054 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 16:58:18.054 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 16:58:18.060 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 16:58:18.060 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 17:59:34.516 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 17:59:34.516 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 17:59:34.553 [http-nio-8080-exec-1] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: org.hibernate.query.SemanticException: No query roots were specified
+2024-12-15 18:07:25.136 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:07:25.136 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:07:25.250 [http-nio-8080-exec-2] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: class java.util.ArrayList cannot be cast to class jakarta.persistence.criteria.Predicate (java.util.ArrayList is in module java.base of loader 'bootstrap'; jakarta.persistence.criteria.Predicate is in unnamed module of loader 'app')
+2024-12-15 18:08:46.329 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:08:46.329 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:08:46.439 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 7 movies
+2024-12-15 18:08:46.439 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 7 movies
+2024-12-15 18:08:56.652 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:08:56.652 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:08:56.662 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 18:08:56.662 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 18:09:50.914 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:09:50.915 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:09:50.937 [http-nio-8080-exec-1] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Operand of 'like' is of type 'java.lang.Double' which is not a string (its JDBC type code is not string-like)
+2024-12-15 18:15:14.876 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:15:14.876 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:15:14.984 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 18:15:14.984 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 18:15:51.607 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:15:51.608 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:15:51.721 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 18:15:51.722 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 18:28:49.412 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:28:49.413 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:28:49.518 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 18:28:49.518 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 18:42:25.758 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:42:25.758 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:42:25.863 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 18:42:25.863 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 18:49:05.077 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 18:49:05.078 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 18:49:05.181 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 18:49:05.181 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 19:53:54.692 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 19:53:54.693 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 19:53:54.795 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 19:53:54.796 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 19:53:59.630 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 19:53:59.631 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 19:53:59.636 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 19:53:59.636 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:28:44.520 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:28:44.520 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:28:44.621 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:28:44.621 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:30:28.605 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:30:28.605 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:30:28.614 [http-nio-8080-exec-5] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Terminal path 'releaseDate' has no attribute 'year'
+2024-12-15 21:33:13.070 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:33:13.071 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:33:13.181 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:33:13.181 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:34:01.167 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:34:01.168 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:34:01.280 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:34:01.281 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:34:44.834 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:34:44.835 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:34:44.937 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:34:44.937 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:34:53.756 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:34:53.756 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:34:53.775 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 21:34:53.775 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 21:41:46.828 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:41:46.829 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:41:46.956 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:41:46.956 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:45:16.511 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:45:16.512 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:45:16.622 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:45:16.622 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:46:12.943 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:46:12.944 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:46:13.050 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:46:13.050 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:52:13.575 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:52:13.576 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:52:13.594 [http-nio-8080-exec-1] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Could not resolve attribute 'release_date' of 'com.strutynskyi.api.models.Movie'
+2024-12-15 21:52:46.480 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:52:46.481 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:52:46.582 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:52:46.583 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:53:24.245 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:53:24.246 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:53:24.251 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:53:24.252 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 21:53:48.000 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 21:53:48.001 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 21:53:48.105 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 21:53:48.106 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 22:01:19.620 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:01:19.621 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:01:19.727 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 22:01:19.727 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 22:04:56.897 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:04:56.898 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:04:57.002 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieved 10 movies
+2024-12-15 22:04:57.002 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Fetched 10 movies
+2024-12-15 22:06:46.303 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:06:46.303 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:06:46.311 [http-nio-8080-exec-5] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Parameter 1 of function 'extract()' has type 'TEMPORAL_UNIT', but argument is of type 'java.lang.Object'
+2024-12-15 22:09:15.760 [http-nio-8080-exec-1] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:09:15.760 [http-nio-8080-exec-1] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:09:15.781 [http-nio-8080-exec-1] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: Parameter 1 of function 'extract()' has type 'TEMPORAL_UNIT', but argument is of type 'java.lang.Object'
+2024-12-15 22:51:11.479 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:51:11.480 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:51:11.587 [http-nio-8080-exec-2] ERROR project - GlobalExceptionHandler:handleException() An exception occurred: JDBC exception executing SQL [select m1_0.id,m1_0.description,m1_0.director_id,m1_0.duration,m1_0.genre,m1_0.image_data,m1_0.image_name,m1_0.image_type,m1_0.rating,m1_0.released,m1_0.title from movie m1_0 where YEAR(m1_0.released)=? offset ? rows fetch first ? rows only] [ERROR: function year(date) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 182] [n/a]; SQL [n/a]
+2024-12-15 22:53:44.878 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:53:44.879 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:53:44.982 [http-nio-8080-exec-2] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 22:53:44.982 [http-nio-8080-exec-2] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 22:53:56.699 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:53:56.699 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:53:56.723 [http-nio-8080-exec-3] INFO  project - MovieServiceImpl:findAll() Retrieved 1 movies
+2024-12-15 22:53:56.723 [http-nio-8080-exec-3] INFO  project - MovieController:getAll() Fetched 1 movies
+2024-12-15 22:54:53.060 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:54:53.060 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:54:53.065 [http-nio-8080-exec-4] INFO  project - MovieServiceImpl:findAll() Retrieved 2 movies
+2024-12-15 22:54:53.065 [http-nio-8080-exec-4] INFO  project - MovieController:getAll() Fetched 2 movies
+2024-12-15 22:55:05.541 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:55:05.541 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:55:05.548 [http-nio-8080-exec-5] INFO  project - MovieServiceImpl:findAll() Retrieved 0 movies
+2024-12-15 22:55:05.548 [http-nio-8080-exec-5] INFO  project - MovieController:getAll() Fetched 0 movies
+2024-12-15 22:55:26.748 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:55:26.748 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:55:26.754 [http-nio-8080-exec-6] INFO  project - MovieServiceImpl:findAll() Retrieved 2 movies
+2024-12-15 22:55:26.754 [http-nio-8080-exec-6] INFO  project - MovieController:getAll() Fetched 2 movies
+2024-12-15 22:56:40.162 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Received request to fetch all movies
+2024-12-15 22:56:40.162 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieving all movies from repository
+2024-12-15 22:56:40.168 [http-nio-8080-exec-10] INFO  project - MovieServiceImpl:findAll() Retrieved 1 movies
+2024-12-15 22:56:40.169 [http-nio-8080-exec-10] INFO  project - MovieController:getAll() Fetched 1 movies

@@ -29,4 +29,4 @@ api:
       allowed-fields:
         - genre
         - rating
-        - releaseDate
+        - released
